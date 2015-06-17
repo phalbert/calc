@@ -57,11 +57,34 @@ def power
 	puts "#{num1} power #{num2}: #{power}"
 end
 
+def sqrt
+	puts 'Enter a number'
+	num = gets.to_i
+	sqroot = (Math.sqrt(num)).round
+	print "square_root of #{num} is #{sqroot}"
+end
+
 def operation
-	puts "  Choose an operation\n1.addition\n2.subtract\n3.qoutient\n4.multiply\n5.square\n6.square_root"
+	puts "  Choose an operation
+	        \n1.addition\n2.subtract
+	        \n3.division\n4.multiply
+	        \n5.square\n6.square_root"
 end
 
 puts operation
 choice = gets.to_i
 
-
+case choice
+    when 1
+	    puts add
+    when 2
+	    puts diff
+	when 3
+		puts qoutient
+    when 4
+		puts product
+	when 5
+		puts power
+	when 6
+		puts sqrt																				
+end
