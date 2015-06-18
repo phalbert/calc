@@ -35,7 +35,9 @@ def qoutient
 	num2 = gets.to_i
 
 	qoutient = num1 / num2
+	modulus = num1 % num2
 	puts "qoutient: #{qoutient}"
+	print "modulus = #{modulus}"
 end
 
 def square
@@ -62,6 +64,25 @@ def sqrt
 	num = gets.to_i
 	sqroot = (Math.sqrt(num)).round
 	print "square_root of #{num} is #{sqroot}"
+end
+
+
+=begin
+    A method trig contains common trig operations
+=end
+def trig
+	num = gets.to_f
+
+	cosine = Math.cos(num)
+	sine = Math.sin(num)
+	tang = Math.tan(num)
+
+	cot = cosine/sine
+	cosec = 1/sine
+	sec = 1/cosine
+
+	
+
 end
 
 def operation
