@@ -1,1 +1,5 @@
-Lorem ipsum
+Reading a file uses the same File.open method as before. However, the second argument is an "r" instead of "w".
+
+After the file is opened, you can use a variety of methods to read its content. The most obviously-named method is read, which grabs all the file's contents:
+
+

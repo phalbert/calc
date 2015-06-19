@@ -89,10 +89,12 @@ def operation
 	puts "  Choose an operation
 	        \n1.addition\n2.subtract
 	        \n3.division\n4.multiply
-	        \n5.square\n6.square_root"
+	        \n5.square\n6.square_root
+	        \n7.trig"
 end
 
 puts operation
+print "Choose a number: "
 choice = gets.to_i
 
 case choice
@@ -107,5 +109,12 @@ case choice
 	when 5
 		puts power
 	when 6
-		puts sqrt																				
+		puts sqrt
+	when 7
+		puts trig
+	else
+		puts "u have got it "
+		puts operation
 end
+
+	puts operation

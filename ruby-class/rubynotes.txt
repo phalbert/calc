@@ -1,0 +1,14 @@
+	Thur 18/06/15 9:22
+Numbers,strings, file i/o
+research on Ruby math class
+read on regular expressions; using them to validate input
+change choice variable to recieve chaaracters intead of numbers
+application of case and if statements in ruby: login forms, say a user is logged in, they only see the signout button, not sign in; and vice versa
+loops in ruby : applications outputing a list of students
+  i.e student = select * from table 
+  then variable student is passed to a loop
+    e.g student.each do |i|
+              i is a variable taking diff students in the loop
+ assignment : create a program that creates a file writes to it, but subsequently appends
+                      it should also create a directory for the file
+                      reading a maximum of 500 characters from file
