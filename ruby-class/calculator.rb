@@ -113,8 +113,11 @@ case choice
 	when 7
 		puts trig
 	else
-		puts "u have got it "
 		puts operation
 end
 
-	puts operation
+    menu_choice = 0
+
+	while menu_choice != 0
+		puts operation
+	end
