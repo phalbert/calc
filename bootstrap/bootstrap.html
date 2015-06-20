@@ -1,0 +1,134 @@
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+	<title>TRIAL</title>
+	<script type="text/javascript" src="js/jquery-1.9.0.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script> <!-- Linkling Javascript -->
+	</head>
+	<body style="padding: 20px">
+	<span class="glyphicon glyphicon-search"></span>
+	    <form role="form">
+	    	<div class="form-group">
+	    		<label for="name">Select list</label>
+	    		<select class="form-control">
+	    			<option>Ruby</option>
+	    			<option>Go</option>
+	    			<option>Swift</option>
+	    			<option>Python</option>
+	    			<option>Ada</option>
+	    		</select>
+
+	    		<label for="name">Multiple select</label>
+	    		<select multiple class="form-control">
+	    			<option>Windows</option>
+	    			<option>Ubuntu</option>
+	    			<option>Redhat</option>
+	    			<option>Fedora</option>
+	    			<option>Mageia</option>
+	    		</select>
+
+	    		<label for="name">Label</label>
+	    		<input type="text" class="form-control" placeholder="Text input">
+	    	</div>
+	    </form>
+
+	    <form class="form-horizontal" role="form">
+	<div class="form-group" >
+	<label class="col-sm-2 control-label">Email</label>
+	<div class="col-sm-10">
+	<input focus="true" type="text"class="form-control" placeholder="Email">
+	</div>
+	</div>
+	<div class="form-group">
+	<label for="inputPassword" class="col-sm-2 control-label">Password</label>
+	<div class="col-sm-10">
+	<input type="password" class="form-control" id="inputPassword"
+	placeholder="Password">
+	</div>
+	</div>
+	</form>
+
+	<!-- Form control states -->
+	<form class="form-horizontal" role="form">
+	<div class="form-group">
+	<label class="col-sm-2 control-label">Focused</label>
+	<div class="col-sm-10">
+	<input class="form-control" id="focusedInput" type="text"
+	value="This is focused...">
+	</div>
+	</div>
+	<div class="form-group">
+	<label for="inputPassword" class="col-sm-2 control-label">
+	Disabled
+	</label>
+	<div class="col-sm-10">
+	<input class="form-control" id="disabledInput" type="text"
+	placeholder="Disabled input here..." disabled>
+	</div>
+	</div>
+	<fieldset disabled>
+	<div class="form-group">
+	<label for="disabledTextInput" class="col-sm-2 control-label">
+	Disabled input (Fieldset disabled)
+	</label>
+	<div class="col-sm-10">
+	<input type="text" id="disabledTextInput" class="form-control"
+	placeholder="Disabled input">
+	</div>
+	</div>
+	<div class="form-group">
+	<label for="disabledSelect" class="col-sm-2 control-label">
+	Disabled select menu (Fieldset disabled)
+	</label>
+	<div class="col-sm-10">
+	<select id="disabledSelect" class="form-control">
+	<option>Disabled select</option>
+	</select>
+	</div>
+	</div>
+	</fieldset>
+	<div class="form-group has-success">
+	<label class="col-sm-2 control-label" for="inputSuccess">
+	Input with success
+	</label>
+	<div class="col-sm-10">
+	<input type="text" class="form-control" id="inputSuccess">
+	</div>
+	</div>
+	<div class="form-group has-warning">
+	<label class="col-sm-2 control-label" for="inputWarning">
+	Input with warning
+	</label>
+	<div class="col-sm-10">
+	<input type="text" class="form-control" id="inputWarning">
+	</div>
+	</div>
+	<div class="form-group has-error">
+	<label class="col-sm-2 control-label" for="inputError">
+	Input with error
+	</label>
+	<div class="col-sm-10">
+	<input type="text" class="form-control" id="inputError">
+	</div>
+	</div>
+
+   <!-- Buttons -->
+   <button type="button" class="btn btn-default">Default Button</button>
+<!-- Provides extra visual weight and identifies the primary action in a set of
+buttons -->
+<button type="button" class="btn btn-primary">Primary Button</button>
+<!-- Indicates a successful or positive action -->
+<button type="button" class="btn btn-success">Success Button</button>
+<!-- Contextual button for informational alert messages -->
+<button type="button" class="btn btn-info">Info Button</button>
+<!-- Indicates caution should be taken with this action -->
+<button type="button" class="btn btn-block btn-warning disabled">Warning Button</button>
+<!-- Indicates a dangerous or potentially negative action -->
+<button type="button" class="btn btn-link">link Button</button>
+
+
+</html>
