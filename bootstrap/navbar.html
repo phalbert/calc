@@ -45,27 +45,66 @@
 
 <nav class="navbar navbar-default" role="navigation">
    
-   <ul class="nav nav-tabs nav-justified" role="navigation">
-	<li class="active"><a href="#">Home</a></li>
-	<li><a href="#">Sermons</a></li>
-	<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Ministries<span class="caret"></span></a>
-	   <ul class="dropdown-menu">
-           <li><a href="#">Youth</a></li>
-           <li><a href="#">Choir</a></li>
-           <li><a href="#">Education</a></li>
+   <ul id="myTab" class="nav nav-tabs nav-justified" role="navigation">
+	<li class="active"><a href="#home" data-toggle="tab">Home</a></li>
+	<li><a href="#sermons"  data-toggle="tab">Sermons</a></li>
+	<li class="dropdown" data-toggle="tab"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Ministries<span class="caret"></span></a>
+	   <ul class="dropdown-menu nav nav-pills nav-stacked">
+           <li><a href="#youth" tabindex="-1" data-toggle="tab">Youth</a></li>
+           <li><a href="#choir" tabindex="-1" data-toggle="tab">Choir</a></li>
+           <li><a href="#educ" tabindex="-1" data-toggle="tab"> Education</a></li>
         </ul
 	</li>
-	<li><a href="#">Projects</a></li>
-	<li><a href="#">News</a></li>
-	<li><a href="#">Contact</a></li>
+	<li><a href="#projects" data-toggle="tab">Projects</a></li>
+	<li><a href="#news" data-toggle="tab">News</a></li>
+	<li><a href="#contact" data-toggle="tab">Contact</a></li>
   </ul>
-	
-</nav>
- 	
- 	 <form class="pull-right navbar-form navbar-left" role="search">
-      <div class="form-group">
-         <input type="text" class="form-control" placeholder="Search">
-      </div>
-        <button type="submit" style="width: 100px" class="btn btn-default">Search</button>
-     </form>
+<div id="myTabContent" class="tab-content">
+    <div class="tab-pane fade in active" id="home">
+        <p>
+        	Divine church ministries is a ministry
+        </p>
+    </div>
+    <div class="tab-pane fade" id="sermons">
+        <p>
+        	You can follow all the latest and browse past
+        </p>
+    </div>
+    <div class="tab-pane fade" id="youth">
+        <p>
+        	For the next generation
+        </p>
+    </div>
+    <div class="tab-pane fade" id="choir">
+       <p>
+       	    Worship and praise
+       </p>
+    </div>
+    <div class="tab-pane fade" id="educ">
+       <p>
+       	    Sponsorships 
+       </p>
+    </div>
+    <div class="tab-pane fade" id="projects">
+       <p>
+       	    Activities
+       </p>
+    </div>
+    <div class="tab-pane fade" id="news">
+       <p>
+       	    Whats happening here and ther
+       </p>
+    </div>
+    <div class="tab-pane fade" id="contact">
+       <p>
+       	   Find us; fellowship with us
+       </p>
+    </div>
+
+</div>
+<script>
+   $(function () {
+   $('#myTab li:eq(1) a').tab('show');
+   });
+</script>
 </body>
